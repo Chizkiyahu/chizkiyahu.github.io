@@ -1,1 +1,71 @@
-<h1>Hello </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: white;
+            }
+            .card {
+                background-color: #1e1e1e;
+                color: white;
+                box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <a href="https://chizkiyahu.github.io/TextDiff/" class="card">
+                <h2>Text Diff Tool</h2>
+                <p>Compare text differences easily.</p>
+            </a>
+            <a href="https://chizkiyahu.github.io/pdf-dark-mode-converter/" class="card">
+                <h2>PDF Dark Mode Converter</h2>
+                <p>Convert PDFs to dark mode.</p>
+            </a>
+           <a href="https://chizkiyahu.github.io/netron/" class="card">
+                <h2>Netron Fork</h2>
+                <p>Visualize neural network models.</p>
+            </a>
+            <a href="https://github.com/chizkiyahu" class="card">
+                <h2>GitHub Profile</h2>
+                <p>View my repositories and projects.</p>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
